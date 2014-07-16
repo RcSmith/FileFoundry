@@ -36,6 +36,11 @@ body {
 	background-attachment: fixed;
 }
 
+.index {
+	margin: 0;
+	padding: 0;
+}
+
 img {
 	vertical-align: middle;
 	border: 0;
@@ -89,6 +94,9 @@ p {
 		float: left;
 	}
 	
+	.col-md-10 {
+		width: 83.3333333333333%;
+	}
 	.col-md-8 {
 		width: 66.6666666666666%;
 	}
@@ -120,7 +128,7 @@ p {
 	}
 }
 
-.col-sm-8, .col-sm-12, .col-md-3, .col-md-4, .col-md-8 {
+.col-sm-8, .col-sm-12, .col-md-2, .col-md-3, .col-md-4, .col-md-8., .col-md-10 {
 	position: relative;
 	min-height: 1px;
 	padding-left: 15px;
@@ -141,30 +149,34 @@ p {
 }
 
 .main-header {
-	padding: 50px 0;
-	background-color: #888;
-}
-
-.main-header nav ul {
-	border-color: #a50e43;
-	margin: 0;
-	padding: 0;
+	padding: 10px 10px;
+	background-color: #eee;
+	box-shadow: 10px 10px 5px #888888;
 }
 
 .main-header nav li {
-	float: right;
+	float: left;
 	list-style-type: none;
 	position: relative;
-	padding-left: 2px;
+	padding-left: 5px;
 }
 
 .main-header nav li a {
 	display: block;
-	padding: 7px;
 	font-size: 1.25em;
-	background-color: #a50e43;
+	background-color: #fff
 	color: #fff;
-	transition: background-color .7s ease;
+}
+
+ul, menu, dir {
+	display: block;
+	font-family: "Walkway SemiBold", "Cabin";
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
 }
 
 a {
@@ -176,3 +188,47 @@ a {
 a:-webkit-any-link {
 	cursor: auto;
 }
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+	font-weight: 200;
+}
+
+.row:before, .row:after {
+	content: " ";
+	display: table;
+}
+
+:before, :after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row:after {
+	clear: both;
+}
+
+.hero {
+	height: 250px;
+	background-color: #333;
+}
+
+.group {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 25px 12.5px;
+	height: 200px;
+}
+
+.group h1 {
+	font-size: 1.25em;
+	padding: 10px 5px;
+	color: #fff;
+}
+
+.group h2 {
+	font-size: 1em;
+	padding: 5px;
+	color: #eee;
+}
+
