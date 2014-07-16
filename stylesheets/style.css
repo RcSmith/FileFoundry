@@ -1,0 +1,178 @@
+* {
+	line-height: inherit;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, div, footer, header, hgroup, main
+	nav, section, summary {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Walkway SemiBold", sans-serif;
+}
+
+h1 {
+	font-size: 4em;
+	display: block;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+body {
+	display: block;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-sizing: border-box;
+	font-family: "Cabin", sans-serif;
+	font-size: 16px;
+	color: #333;
+	background-attachment: fixed;
+}
+
+img {
+	vertical-align: middle;
+	border: 0;
+}
+
+form {
+	display: block;
+	margin: 0em;
+}
+
+label {
+	cursor: default;
+}
+
+p {
+	text-align: left;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+	
+	.col-sm-12 {
+		width: 100%;
+	}
+	
+	.col-sm-8 {
+		width: 66.666666666%;
+	}
+	
+	.col-sm-8, .col-sm-12 {
+		float: left;
+	}
+	
+	.col-sm-offset-2 {
+		margin-left: 16.66666666664%;
+	}
+	
+	.col-sm-offset-1 {
+		margin-left: 8.3333333333333%
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+	
+	.col-md-3, .col-md-4, .col-md-8 {
+		float: left;
+	}
+	
+	.col-md-8 {
+		width: 66.6666666666666%;
+	}
+	
+	.col-md-4 {
+		width: 33.33333333333333%;
+	}
+	
+	.col-md-3 {
+		width: 25%;
+	}
+
+	.col-md-2 {
+		width: 16.666666666666667%;
+	}
+	
+	.col-md-offset-2 {
+		margin-left: 16.6666666666664%;
+	}
+	
+	.col-md-offset-1 {
+		margin-left: 8.333333333333333%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+.col-sm-8, .col-sm-12, .col-md-3, .col-md-4, .col-md-8 {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.content-wrap {
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #333;
+}
+
+.main-header {
+	padding: 50px 0;
+	background-color: #888;
+}
+
+.main-header nav ul {
+	border-color: #a50e43;
+	margin: 0;
+	padding: 0;
+}
+
+.main-header nav li {
+	float: right;
+	list-style-type: none;
+	position: relative;
+	padding-left: 2px;
+}
+
+.main-header nav li a {
+	display: block;
+	padding: 7px;
+	font-size: 1.25em;
+	background-color: #a50e43;
+	color: #fff;
+	transition: background-color .7s ease;
+}
+
+a {
+	text-decoration: none;
+	background: transparent;
+	color: #333;
+}
+
+a:-webkit-any-link {
+	cursor: auto;
+}
