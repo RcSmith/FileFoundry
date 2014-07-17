@@ -1,3 +1,19 @@
+/* haha well this is still ridiculously uglly. Still all in progress. Hopefully something
+	good starts coming together */
+
+@font-face {
+	font-family: "icomoon";
+	src:url(../fonts/icomoon.eot);
+	src:url(../fonts/icomoon.svg#icomoon) format('svg'),
+		url(../fonts/icomoon.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/icomoon.woff) format('woff'),
+		url(../fonts/icomoon.ttf) format('truetype');
+		
+
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	line-height: inherit;
 	-webkit-box-sizing: border-box;
@@ -11,7 +27,7 @@ article, aside, details, figcaption, figure, div, footer, header, hgroup, main
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Walkway SemiBold", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "Walkway SemiBold", sans-serif;
 }
 
 h1 {
@@ -136,7 +152,7 @@ p {
 }
 
 .content-wrap {
-	background-color: #fff;
+	background-color: #FFFFFF;
 	margin-bottom: 20px;
 }
 
@@ -149,9 +165,15 @@ p {
 }
 
 .main-header {
-	padding: 10px 10px;
-	background-color: #eee;
-	box-shadow: 10px 10px 5px #888888;
+	display: block;
+	padding: 20px 0!important;
+
+	background-color: #FCFCFC;
+	background-image: -moz-linear-gradient(top, #ffffff, #f8f8f8);
+	background-image: -webkit-linear-gradient(top, #ffffff, #f8f8f8);
+	background-image: -o-linear-gradient(top, #ffffff, #f8f8f8);
+	background-image: linear-gradient(to bottom, #ffffff, #f8f8f8);
+	background-repeat: repeat-x;
 }
 
 .main-header nav li {
@@ -189,6 +211,13 @@ a:-webkit-any-link {
 	cursor: auto;
 }
 
+table {
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
 .row {
 	margin-left: -15px;
 	margin-right: -15px;
@@ -211,25 +240,50 @@ a:-webkit-any-link {
 
 .hero {
 	height: 325px;
-	background-color: #333;
+	background-image: url(../assets/banner-blueprint.png);
+	border-top: 1px solid #ffffff;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset;
+	-moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3) inset;
+
+	display: block;
 }
 
-.group {
-	background-color: rgba(255, 255, 255, 0.5);
-	margin: 25px 12.5px;
+.group {	
 	height: 200px;
+	width: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: auto;
+	margin-left: auto;	
+	text-align: center;
+
+	-webkit-box-shadow: inset 2px 2px 3px 0 #232323;
+    -moz-box-shadow: inset 2px 2px 3px 0 #232323;
+    box-shadow: inset 2px 2px 3px 0 #232323;
 }
 
 .group h1 {
-	font-size: 1.25em;
+	font-size: 1.625em;
 	padding: 10px 5px;
-	color: #fff;
+	color: #555555;
 }
 
 .group h2 {
 	font-size: 1em;
 	padding: 5px;
-	color: #eee;
+	color: #777;
+}
+
+#caduceus {
+	max-height: 50%;
+	max-width: 50%;
+	opacity: 0.25;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	clear: right;	
 }
 
 .search-form {
@@ -276,4 +330,61 @@ a:-webkit-any-link {
 	line-height: 1.428571429;
 	color: #555;
 	border-radius: 0;
+}
+
+.categories {
+	background-color: #637C81;	
+	padding: 20px 0px;
+}
+
+.category {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.category h1 {
+	font-size: 2em;
+	color: #F2F2F2;
+
+	width: 100%;
+	float: left;		
+	display: block;
+	margin: 5px 0px;
+}
+
+.category h2 {
+	font-size: 1em;
+	padding: 5px;
+	color: #777;
+}
+
+.category h4 {
+	font-size: 2.5em;
+	position: relative;
+	display: block;
+	margin: 0;
+}
+
+.category p {
+	color: #FFFFFF;
+	display: block;
+}
+
+[data-icon]:before {
+	font-family: 'icomoon';
+	color: #fff;
+	content: attr(data-icon);
+	speak: none;
+}
+
+.icomoon {
+	border: 0;
+	background-color: transparent;
+	color: #fff;
+	float: left;
+	padding: 4px;
+	display: block;
 }
