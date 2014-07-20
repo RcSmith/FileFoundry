@@ -487,15 +487,31 @@ tr.row:before, tr.row:after {
 	color: #FFFFFF;
 	position: relative;
 
-	padding-top: 35px;
+	padding: 35px 0;
+}
+
+.refine h3 {
+	font-family: "Helvetica";
+	color: #FFFFFF;
+	font-size: 1.32em;
+	margin: 15px 0;
+}
+
+.refine p {
+	color: #c4c4c4;
+	font-size: .8em;
+	margin-bottom: 3px;
+	margin-left: 8px; 
+	margin-top: 0;
 }
 
 .endpage {
-	margin: 0;	
-	position: absolute;
-	display: block;
-	bottom: 0;
-	background-color: #E5E5E5;		
+	margin: 0;
+	bottom: 0;	
+	display: block;	
+	background-color: #2E4174;		
 	height: 150px;
 	clear: both;
+
+	border-top: 1px solid #FFFFFF;
 }
