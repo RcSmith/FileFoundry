@@ -160,6 +160,8 @@ p {
 	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
+
+	overflow: hidden;
 }
 
 .content-wrap {
@@ -262,21 +264,26 @@ table {
 .row {
 	margin-left: -15px;
 	margin-right: -15px;
-	font-weight: 200;
+	font-weight: 200;	
 }
 
 .row:before, .row:after {
-	content: " ";
 	display: table;
+	line-height: 0;
+	content: "";
 }
 
 :before, :after {
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	box-sizing: border-box;	
 }
 
 .row:after {
-	clear: both;
+	clear: both;	
+}
+
+tr.row:before, tr.row:after {
+	display: none;
 }
 
 #logo {
@@ -357,7 +364,7 @@ table {
 .categories {
 	background-color: #C8C8C8;	
 	padding: 20px 0px;
-	border-top: 2px solid #FFFFFF;
+	border-top: 2px solid #FFFFFF;	
 }
 
 .category {
@@ -422,8 +429,10 @@ table {
 }
 
 .item-list {
-	margin-top: 100px;	
-	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 75px;
+
+	text-align: center;	
 }
 
 .item-list h3 {
@@ -431,29 +440,54 @@ table {
 	color: #424242;
 }
 
-.item-list img {
-	height: 200px;
+.item {
+	margin-right: auto;
+	margin-left: auto;
+
 	width: 200px;
-
-	transition: ;
-}
-
-.item-list img:hover {
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-.item-list tr {
-	border-bottom: 1px solid #828282;
-}
-
-.item-list .overlay {
 	height: 200px;
-	width: 200px;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-image: url(../assets/bolt.jpg);
+	background-size: 200px 200px;
+	overflow: hidden;
 }
 
-.item-list .overlay:hover {
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0;
+
+	transition: opacity 0.25s ease;
+}
+
+.overlay:hover {
+	opacity: 0.75;
+}
+
+.item-stats {
+	padding-top: 35px;
+	color: #FFFFFF;
+}
+
+.subject {
+	color: #858585;
+}
+
+.line {
 	display: block;
+	padding-left: 20px;
+	margin-bottom: 5px;
+
+	clear: left;
+	float: left;
+}
+
+.refine {
+	background-color: #2E4174;
+	color: #FFFFFF;
+	position: relative;
+
+	padding-top: 35px;
 }
 
 .endpage {
